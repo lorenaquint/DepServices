@@ -6,7 +6,10 @@ using DepServices.DependencyServices;
 using Foundation;
 using UIKit;
 using AVFoundation;
+using Xamarin.Forms;
+using DepServices.iOS.DependencyServices;
 
+[assembly:Dependency(typeof(IOSTextVoz))]
 namespace DepServices.iOS.DependencyServices
 {
     public class IOSTextVoz :  ITextVoz
