@@ -57,6 +57,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DepndencyService\AndroidMessage.cs" />
+    <Compile Include="DepndencyService\AndroidTextVoz.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -93,7 +94,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DepServices\DepServices.csproj">
-      <Project>{E8DF3E24-66E2-46E0-B701-503C0241E568}</Project>
+      <Project>{0bd11a46-8131-42e3-afb7-a5b3bf3ce3e0}</Project>
       <Name>DepServices</Name>
     </ProjectReference>
   </ItemGroup>

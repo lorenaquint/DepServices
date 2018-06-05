@@ -90,6 +90,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="DependencyServices\IOSMessage.cs" />
+    <Compile Include="DependencyServices\IOSTextVoz.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
     <None Include="Entitlements.plist" />
@@ -153,9 +154,8 @@
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
     <ProjectReference Include="..\DepServices\DepServices.csproj">
-      <Project>{E8DF3E24-66E2-46E0-B701-503C0241E568}</Project>
+      <Project>{0bd11a46-8131-42e3-afb7-a5b3bf3ce3e0}</Project>
       <Name>DepServices</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
 </Project>

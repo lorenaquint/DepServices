@@ -15,7 +15,14 @@ namespace DepServices
 		{
 			InitializeComponent();
             this.btnMessage.Clicked += BtnMessage_Clicked;
+            this.btnTextoVoz.Clicked += BtnTextoVoz_Clicked;
 		}
+
+        private void BtnTextoVoz_Clicked(object sender, EventArgs e)
+        {
+            var service = DependencyService.Get<ITextVoz>();
+            service.Spek("Esto es Xamarin Forms y Dependecy Service");
+        }
 
         private async void BtnMessage_Clicked(object sender, EventArgs e)
         {

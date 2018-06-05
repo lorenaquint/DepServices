@@ -8,6 +8,9 @@
         <Button HeightRequest="100"
                 Text="Message"
                 x:Name="btnMessage"/>
+        <Button HeightRequest="100"
+                Text="Texto a Voz"
+                x:Name="btnTextoVoz"/>
 
     </StackLayout>
 
