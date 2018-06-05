@@ -5,6 +5,7 @@ using System.Text;
 using DepServices.DependencyServices;
 using Foundation;
 using UIKit;
+using AVFoundation;
 
 namespace DepServices.iOS.DependencyServices
 {
@@ -12,7 +13,16 @@ namespace DepServices.iOS.DependencyServices
     {
         public void Spek(string text)
         {
-            throw new NotImplementedException();
+            var speechSynthesizer = new AVSpeechSynthesizer();
+            var speechUtterance = new AVSpeechUtterance(text)
+            {
+                Rate = AVSpeechUtterance.MaximumSpeechRate / 4,
+                Voice = AVSpeechSynthesisVoice.FromLanguage("es-ES"),
+                Volume = 0.5f,
+                PitchMultiplier = 1.0f
+                
+            };
+            speechSynthesizer.SpeakUtterance(speechUtterance);
         }
     }
 }
