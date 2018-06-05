@@ -3,15 +3,46 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:DepServices"
              x:Class="DepServices.MainPage">
-
-    <StackLayout>
-        <Button HeightRequest="100"
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Nuevo">
+            <ToolbarItem.Icon>
+                <OnPlatform x:TypeArguments="FileImageSource"
+                            iOS="ic_action_info.png"
+                            Android="ic_action_info.png"/>
+            </ToolbarItem.Icon>
+        </ToolbarItem>
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+    <StackLayout Margin="20">
+        <Button HeightRequest="50"
                 Text="Message"
-                x:Name="btnMessage"/>
+                x:Name="btnMessage"
+                BackgroundColor="Navy"
+                TextColor="White"/>
         <Button HeightRequest="100"
                 Text="Texto a Voz"
-                x:Name="btnTextoVoz"/>
+                x:Name="btnTextoVoz"
+                BackgroundColor="OrangeRed"
+                TextColor="White"/>
+        <Button Text="Plataforma"
+                BackgroundColor="CadetBlue"
+                TextColor="White"
+                x:Name="btnPlataforma"
+                >
+            <Button.FontSize>
+                <OnPlatform x:TypeArguments="x:Double"
+                    iOS = "24"
+                    Android = "67"
+                            />
+
+            </Button.FontSize>
+            
+        </Button>
+        <Label x:Name="txtAviso"
+               FontSize="Large"
+               TextColor="Navy"/>
+       
 
     </StackLayout>
-
+    </ContentPage.Content>
 </ContentPage>
